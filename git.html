@@ -17,8 +17,23 @@
         <li class="header">
             <a title="Git簡易教學" href="#section-git">Git簡易教學</a>
         </li>
+        <li>
+            <a title="Git的介紹" href="#section-git-introductions">Git的介紹</a>
+        </li>
+        <li>
+            <a title="Git的安裝" href="#section-git-installations">Git的安裝</a>
+        </li>
+        <li>
+            <a title="Git的指令" href="#section-git-commands">Git的指令</a>
+        </li>
+        <li>
+            <a title="Git的資源" href="#section-git-resources">Git的資源</a>
+        </li>
         <li class="header">
-            <a title="GitHub簡易教學" href="#section-github">GitHub簡易教學</a>
+            <a title="GitHub簡易教學" href="#section-github">GitHub介紹</a>
+        </li>
+        <li class="header">
+            <a title="回到首頁" href="index.html">回到首頁</a>
         </li>
     </ul>
     <div id="container">
@@ -27,11 +42,113 @@
         </header>
         <section id="section-git-contents">
             <h3 id="section-git">Git簡易教學</h3>
-            <p></p>
+            <h4 id="section-git-introductions">Git的介紹</h4>
+            <p>Git是一個知名且廣泛使用的分散式<a title="Wikipedia - 版本控制" href="https://en.wikipedia.org/wiki/Revision_control">版本控制軟體</a>。主要作用為紀錄專案中的檔案變更，並提供恢復到某版本、多個模組同時開發等等。而Git作為Linux核心開的版本控制系統，知名度高，相當快速，且有大量資源。</p>
+            <h4 id="section-git-installations">Git的安裝</h4>
+            <p>根據您所使用的作業系統，可以到<a title="點此打開Git官方網站" href="http://git-scm.com">Git官方網站</a>上下載並安裝。Windows可以<a title="下載Window版本的Git" href="http://git-scm.com/download/win">點此</a>下載，Mac OS X可以<a title="下載Mac OS X版本的Git" title="http://git-scm.com/download/mac">點此</a>下載，Linux請依據各發行版自行使用套件管理系統安裝。另外<a title="圖形化介面的Git軟體列表" href="http://git-scm.com/downloads/guis">這裡</a>有一份圖形化介面的軟體列表，可以安裝這些軟體方便地使用Git。</p>
+            <h4 id="section-git-commands">Git的指令</h4>
+            <p>以下介紹常用的Git指令，並詳細的介紹與教學，請參考<a title="Git的資源" href="#section-git-resources">Git的資源</a>部分：</p>
+            <ol>
+                <li>
+                    <code>git config</code>
+                    <p>這個指令會設定Git的設定值，第一次安裝完成之後，請務必設定自己的名字與信箱，因為Git是利用名字與信箱來分辨貢獻者。</p>
+                    <p>設定的方式為：<code>git config --global user.name &quot;&lt;Your name&gt;&quot;</code>與<code>git config --global user.email &quot;&lt;Your email&gt;&quot;</code>，建立在名字與信箱的部份加上引號。</p>
+                    <p>例如我的名字是：<code>SNMG</code>，信箱是：<code>snmg@csie.ncu.edu.tw</code>，則我必須輸入<code>git config --global user.name &lt;SNMG&gt;</code>與<code>git config --global user.email &lt;snmg@csie.ncu.edu.tw&gt;</code>。
+                </li>
+                <li>
+                    <code>git init</code>
+                    <p>這個指令會在目前的目錄建立一個新倉庫，大部分Git的操作都需要有倉庫才能進行。</p>
+                </li>
+                <li>
+                    <code>git clone &lt;url&gt;</code>
+                    <p>這會指令會將<code>url</code>所指定的倉庫複製到目前目錄。</p>
+                </li>
+                <li>
+                    <code>git add &lt;filename&gt;</code>
+                    <p>這個指令會將<code>filename</code>所指定的檔案加入到倉庫追蹤當中，如果檔案沒有先加入倉庫追蹤的話，Git是不會對該檔案進行版本管理。</p>
+                </li>
+                <li>
+                    <code>git commit</code>
+                    <p>這個指令會將有追蹤並且修改過的內容提交，提交時Git會要求必須輸入修改的內容。提交之後會有一個唯一識別號，可以透過這個識別號去查看之前的修改與說明。</p>
+                </li>
+                <li>
+                    <code>git pull</code>
+                    <p>這個指令會將遠端（如果不是使用<code>clone</code>的話，需要先透過<code>git remote add &lt;url&gt;</code>先設定）的倉庫與本地的倉庫同步並合併。如果有衝突的話Git會要求解決衝突之後再<code>commit</code>。
+                </li>
+                <li>
+                    <code>git push</code>
+                    <p>這個指令會將目前本地倉庫的<code>commit</code>上傳到遠端伺服器中，上傳到伺服器之前務必確定已經用<code>git pull</code>將本地倉庫更新並且解決所有衝突。另外，第一次推送時，必須使用<code>git push origin master</code>才能夠在遠端建立<code>branch</code>並且將遠端伺服器設定為預設推送的伺服器。</p>
+                </li>
+            </ol>
+            <h4 id="section-git-resources">Git的資源</h4>
+            <p>以下列出Git的部份資源，可以自行學習，若有不明白之處，也可以詢問我們或著身邊有使用的同學 :-)</p>
+            <ol>
+                <li>
+                    <a title="Git官方文件（英文）" href="http://git-scm.com/documentation">Git官方文件（英文）</a>
+                </li>
+                <li>
+                    <a title="Pro Git（英文）" href="http://git-scm.com/book">Pro Git（英文）</a>
+                </li>
+                <li>
+                    <a title="Vogella Git Tutorial" href="http://www.vogella.com/articles/Git/article.html">Vogella Git tutorial</a>
+                </li>
+                <li>
+                    <a title="寫給大家的Git教學" href="http://www.slideshare.net/littlebtc/git-5528339">寫給大家的Git教學</a>
+                </li>
+                <li>
+                    <a title="寫給大家的Git教學（第三版）" href="http://littleb.tc/slides/2012/everyone/git.html">寫給大家的Git教學（第三版）</a>
+                </li>
+                <li>
+                    <a title="快速上手Git版本控制" href="http://www.slideshare.net/appleboy/introduction-to-git-11436559">快速上手Git版本控制</a>
+                </li>
+                <li>
+                    <a title="GitHub入門 Part.1 版本控制介紹" href="http://pulipuli.blogspot.tw/2013/02/github-part1.html">GitHub入門 Part.1 版本控制介紹</a>
+                </li>
+                <li>
+                    <a title="GitHub入門 Part.2 工具安裝與環境配置" href="http://pulipuli.blogspot.tw/2013/02/github-part2.html">GitHub入門 Part.2 工具安裝與環境配置</a>
+                </li>
+                <li>
+                    <a title="GitHub入門 Part.3 GIT版本控制實作教學" href="http://pulipuli.blogspot.tw/2013/02/github-part3-git.html">GitHub入門 Part.3 GIT版本控制實作教學</a>
+                </li>
+                <li>
+                    <a title="Git使用教學 Part 1 -- 新手上路" href="http://disp.cc/b/546-3iO2">Git使用教學 Part 1 -- 新手上路</a>
+                </li>
+                <li>
+                    <a title="Git使用教學 Part 2 -- 控制版本" href="http://disp.cc/b/546-3iGz">Git使用教學 Part 2 -- 控制版本</a>
+                </li>
+                <li>
+                    <a title="Git使用教學 Part 3 -- 多人作業" href="http://disp.cc/b/546-3j0H">Git使用教學 Part 3 -- 多人作業</a>
+                </li>
+                <li>
+                    <a title="Git使用教學 Part 4 -- 補充資料" href="http://disp.cc/b/546-3j1w">Git使用教學 Part 4 -- 補充資料</a>
+                </li>
+                <li>
+                    <a title="Git使用教學 Part 5 -- 補充資料2" href="http://disp.cc/b/546-3jn3">Git使用教學 Part 5 -- 補充資料2</a>
+                </li>
+                <li>
+                    <a title="Git使用教學 Part 6 -- GUI介面" href="http://disp.cc/b/546-3ktw">Git使用教學 Part 6 -- GUI介面</a>
+                </li>
+                <li>
+                    <a title="Git 教學(1) : Git 的基本使用" href="http://blog.gogojimmy.net/2012/01/17/how-to-use-git-1-git-basic">Git 教學(1) : Git 的基本使用</a>
+                </li>
+                <li>
+                    <a title="Git 教學(2)：Git Branch 的操作與基本工作流程" href="http://blog.gogojimmy.net/2012/01/21/how-to-use-git-2-basic-usage-and-worflow">Git 教學(2)：Git Branch 的操作與基本工作流程</a>
+                </li>
+                <li>
+                    <a title="Git 情境劇" href="http://blog.gogojimmy.net/2012/02/29/git-scenario">Git 情境劇</a>
+                </li>
+                <li>
+                    <a title="Git教學：初學者使用心得分享（Windows）" href="http://www.mrmu.com.tw/2011/05/06/git-tutorial-for-beginner">Git教學：初學者使用心得分享（Windows）</a>
+                </li>
+                <li>
+                    <a title="Git 基礎教學資源總整理" href="http://chrisflicker.com/blog/2012/git-基礎教學資源總整理">Git 基礎教學資源總整理</a>
+                </li>
+            </ol>
         </section>
         <section id="section-github-contents">
-            <h3 id="section-github">GitHub簡易教學</h3>
-            <p></p>
+            <h3 id="section-github">GitHub介紹</h3>
+            <p><a title="GitHub" href="https://www.github.com">GitHub</a>是一個用於使用Git版本控制系統項目的共享虛擬主機服務。GitHub是一個非常流行的Git倉庫託管服務，許多開源軟體皆託管於GitHub上，例如：<a title="Linux Mint" href="https://zh.wikipedia.org/wiki/Linux_Mint">Linux Mint</a>、<a title="phpBB" href="https://zh.wikipedia.org/wiki/PhpBB">phpBB</a>、<a title="Ptototype" href="https://zh.wikipedia.org/wiki/Prototype">Prototype</a>、<a title="Symfony 2" href="https://zh.wikipedia.org/wiki/Symfony">Symfony 2</a>、<a title=jQuery" href="https://zh.wikipedia.org/wiki/JQuery">jQuery</a>、<a title="Perl" href="https://zh.wikipedia.org/wiki/Perl">Perl</a>、<a title="Ruby" href="https://zh.wikipedia.org/wiki/Ruby">Ruby</a>、<a title="YUI" href="https://zh.wikipedia.org/wiki/Yahoo!_UI_Library">YUI</a>、<a title="JUnit" href="https://zh.wikipedia.org/wiki/JUnit">JUnit</a>、<a title="PHP" href="https://zh.wikipedia.org/wiki/PHP">PHP</a>與<a title="Ruby on Rails" href="https://zh.wikipedia.org/wiki/Ruby_on_Rails">Ruby on Rails</a>等等。</p>
+            <p>GitHub上可以免費申請帳號，如果需求則可以付費成為付費會員。作品需要先從我們的倉庫<a title="Fork教學" href="fork.html">Fork</a>，並且作為自己的倉庫進行撰寫與更新，完成後發起<a title="Pull request 教學" href="pullrequest.html">Pull request</a>。因為發起Pull request需要GitHub帳號才能夠進行，因此請務必註冊申請。</p>
         </section>
         <footer>
             主辦單位：<a title="國立中央大學資訊工程學系" href="http://www.csie.ncu.edu.tw">國立中央大學資訊工程學系</a>

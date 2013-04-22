@@ -102,6 +102,10 @@ ol {
     padding-left: 30px;
 }
 
+code {
+    font-family: monospace;
+}
+
 #fork {
     border: 0;
     position: absolute;
