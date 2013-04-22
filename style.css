@@ -105,6 +105,7 @@ ol {
 img {
     border: 1px solid #CACACA;
     display: block;
+    max-width: 640px;
 }
 
 code {

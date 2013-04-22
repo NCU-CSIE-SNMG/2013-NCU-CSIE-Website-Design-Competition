@@ -1,0 +1,60 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>2013 中央資工網頁設計比賽 - Pull Request教學</title>
+</head>
+
+<body>
+    <a title="Fork me on GitHub" href="https://github.com/NCU-CSIE-SNMG/2013-NCU-CSIE-Website-Design-Competition">
+        <img id="fork" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
+    </a>
+    <ul id="contents">
+        <li class="header">
+            <a title="Pull Request教學" href="#section-pullrequest">Pull Request教學</a>
+        </li>
+        <li>
+            <a title="Fork倉庫" href="#section-pullrequest-step1">Fork倉庫</a>
+        </li>
+        <li>
+            <a title="下載倉庫" href="#section-fork-setp2">下載倉庫</a>
+        </li>
+        <li>
+            <a title="設定遠端" href="#section-fork-step3">設定遠端</a>
+        </li>
+        <li class="header">
+            <a title="回到首頁" href="index.html">回到首頁</a>
+        </li>
+    </ul>
+    <div id="container">
+        <header>
+            <h1>2013 中央資工網頁設計比賽</h1>
+        </header>
+        <section id="section-pullrequest-contents">
+            <h3 id="section-pullrequest">Pull Request教學</h3>
+            <p>藉由GitHub的Pull Request功能，可以將原本<a title="Fork教學" href="fork.html">Fork</a>倉庫之後的修改模並回原本倉庫。也就是對原本的軟體進行改進之後，將這些改進讓原本的軟體維護團隊合併回原本的軟體，藉此改進軟體以及修復問題等等。</p>
+            <p>在團隊開發中亦可以用同樣的方式，將不同的改進放在不同的倉庫中，等到完成之後，在藉由Pull Requests合併回原本的倉庫裡。</p>
+            <p>同樣地，<a title="Using Pull Requests" href="https://help.github.com/articles/using-pull-requests">GitHub官方也一份英文版的教學文件</a>。</p>
+            <h4 id="section-pullrequest-step1">發起Pull Request</h4>
+            <p>假設作品已經完成，準備發起Pull Request來繳交作品。</p>
+            <p>首先到自己的倉庫中，切換到準備合併的分支（通常預設為<code>master</code>）：<img alt="Switch to your branch" src="branch.png" />（圖片來自GitHub官方教學文件）</p>
+            <p>接著點選Pull Request按鈕：<img alt="Click Pull Request" src="pullrequest.png" />（圖片來自GitHub官方教學文件）</p>
+            <p>點選Pull Request按鈕之後，會出現一個預覽視窗，可以寫上一些說明：<img alt="Preview" src="preview.png" />（圖片來自GitHub官方教學文件）</p>
+            <p>可以切換到<code>Commits</code>確認是正確的更動：<img alt="Commits" src="commit.png" />（圖片來自GitHub官方教學文件）</p>
+            <p>切換到<code>Files Changed</code>直接檢視更動的內容：<img alt="Changes" src="changes.png" />（圖片來自GitHub官方教學文件）</p>
+            <h4 id="section-fork-step2">選擇分支</h4>
+            <p>在送出Pull Request之前，請先選擇並確認是正確的分支（從自己的分支合併到原始倉庫的master分支）：<img alt="Chooses" src="chooses.png" />（圖片來自GitHub官方教學文件）</p>
+            <h4 id="section-fork-step3">送出Pull Request</h4>
+            <p>所有內容都確認好之後，便可以按下<code>Send pull request</code>按鈕送出Pull Request：<img alt="Sends" src="sends.png" />（圖片來自GitHub官方教學文件）</p>
+            <p>送出之後，會被引導到Pull Request討論頁面，請將頁面右上方的編號記錄下來，並於填寫報名表單時填上：<img alt="Pull Request Number" src="numbers.png" /></p>
+        </section>
+        <footer>
+            主辦單位：<a title="國立中央大學資訊工程學系" href="http://www.csie.ncu.edu.tw">國立中央大學資訊工程學系</a>
+            <span></span>協辦單位：<a title="國立中央大學資訊工程學系網管小組" href="http://snmg.csie.ncu.edu.tw">國立中央大學資訊工程學系網管小組</a>
+        </footer>
+    </div>
+</body>
