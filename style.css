@@ -57,6 +57,7 @@ body {
     font-family: serif;
     font-size: 16px;
     line-height: 1.5;
+    overflow-y: scroll;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
@@ -129,12 +130,13 @@ section {
     border: 1px solid #CECECE;
     border-radius: 15px;
     left: 50%;
-    margin-left: -430px; 
+    margin-left: -500px; 
     overflow: hidden;
     padding: 15px 0;
     position: absolute;
     position: fixed;
     top: 40px;
+    width: 160px;
 }
 
 #contents a {
