@@ -51,7 +51,6 @@ table {
     border-spacing: 0;
 }
 
-/* Layout styles */
 body {
     background: #E7E7e7;
     color: #6D6D6D;
@@ -100,6 +99,14 @@ h4 {
 ol {
     list-style: decimal outside;
     padding-left: 30px;
+}
+
+#fork {
+    border: 0;
+    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 0;
 }
 
 header {
