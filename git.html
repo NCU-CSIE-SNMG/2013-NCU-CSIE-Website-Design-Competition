@@ -18,9 +18,6 @@
             <a title="Git簡易教學" href="#section-git">Git簡易教學</a>
         </li>
         <li>
-            <a title="Git的介紹" href="#section-git-introductions">Git的介紹</a>
-        </li>
-        <li>
             <a title="Git的安裝" href="#section-git-installations">Git的安裝</a>
         </li>
         <li>
@@ -42,7 +39,6 @@
         </header>
         <section id="section-git-contents">
             <h3 id="section-git">Git簡易教學</h3>
-            <h4 id="section-git-introductions">Git的介紹</h4>
             <p>Git是一個知名且廣泛使用的分散式<a title="Wikipedia - 版本控制" href="https://en.wikipedia.org/wiki/Revision_control">版本控制軟體</a>。主要作用為紀錄專案中的檔案變更，並提供恢復到某版本、多個模組同時開發等等。而Git作為Linux核心開的版本控制系統，知名度高，相當快速，且有大量資源。</p>
             <h4 id="section-git-installations">Git的安裝</h4>
             <p>根據您所使用的作業系統，可以到<a title="點此打開Git官方網站" href="http://git-scm.com">Git官方網站</a>上下載並安裝。Windows可以<a title="下載Window版本的Git" href="http://git-scm.com/download/win">點此</a>下載，Mac OS X可以<a title="下載Mac OS X版本的Git" title="http://git-scm.com/download/mac">點此</a>下載，Linux請依據各發行版自行使用套件管理系統安裝。另外<a title="圖形化介面的Git軟體列表" href="http://git-scm.com/downloads/guis">這裡</a>有一份圖形化介面的軟體列表，可以安裝這些軟體方便地使用Git。</p>
@@ -52,8 +48,8 @@
                 <li>
                     <code>git config</code>
                     <p>這個指令會設定Git的設定值，第一次安裝完成之後，請務必設定自己的名字與信箱，因為Git是利用名字與信箱來分辨貢獻者。</p>
-                    <p>設定的方式為：<code>git config --global user.name &quot;&lt;Your name&gt;&quot;</code>與<code>git config --global user.email &quot;&lt;Your email&gt;&quot;</code>，建立在名字與信箱的部份加上引號。</p>
-                    <p>例如我的名字是：<code>SNMG</code>，信箱是：<code>snmg@csie.ncu.edu.tw</code>，則我必須輸入<code>git config --global user.name &lt;SNMG&gt;</code>與<code>git config --global user.email &lt;snmg@csie.ncu.edu.tw&gt;</code>。
+                    <p>設定的方式為：<code><pre>git config --global user.name &quot;&lt;Your name&gt;&quot;</pre></code>與<code><pre>git config --global user.email &quot;&lt;Your email&gt;&quot;</pre></code>，建立在名字與信箱的部份加上引號。</p>
+                    <p>例如我的名字是：<code>SNMG</code>，信箱是：<code>snmg@csie.ncu.edu.tw</code>，則我必須輸入<code><pre>git config --global user.name &lt;SNMG&gt;</pre></code>以及<code><pre>git config --global user.email &lt;snmg@csie.ncu.edu.tw&gt;</pre></code>這樣便完成的名字與信箱的設定。
                 </li>
                 <li>
                     <code>git init</code>
@@ -77,7 +73,7 @@
                 </li>
                 <li>
                     <code>git push</code>
-                    <p>這個指令會將目前本地倉庫的<code>commit</code>上傳到遠端伺服器中，上傳到伺服器之前務必確定已經用<code>git pull</code>將本地倉庫更新並且解決所有衝突。另外，第一次推送時，必須使用<code>git push origin master</code>才能夠在遠端建立<code>branch</code>並且將遠端伺服器設定為預設推送的伺服器。</p>
+                    <p>這個指令會將目前本地倉庫的<code>commit</code>上傳到遠端伺服器中，上傳到伺服器之前務必確定已經用<code>git pull</code>將本地倉庫更新並且解決所有衝突。另外，第一次推送時，必須使用：<code><pre>git push origin master</pre></code>才能夠在遠端建立<code>branch</code>並且將遠端伺服器設定為預設推送的伺服器。</p>
                 </li>
             </ol>
             <h4 id="section-git-resources">Git的資源</h4>

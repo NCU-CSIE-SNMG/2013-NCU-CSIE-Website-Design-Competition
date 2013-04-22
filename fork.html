@@ -1,0 +1,55 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>2013 中央資工網頁設計比賽 - Fork教學</title>
+</head>
+
+<body>
+    <a title="Fork me on GitHub" href="https://github.com/NCU-CSIE-SNMG/2013-NCU-CSIE-Website-Design-Competition">
+        <img id="fork" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
+    </a>
+    <ul id="contents">
+        <li class="header">
+            <a title="Fork簡易教學" href="#section-fork">Fork簡易教學</a>
+        </li>
+        <li>
+            <a title="Fork倉庫" href="#section-fork-step1">Fork倉庫</a>
+        </li>
+        <li>
+            <a title="下載倉庫" href="#section-fork-setp2">下載倉庫</a>
+        </li>
+        <li>
+            <a title="設定遠端" href="#section-fork-step3">設定遠端</a>
+        </li>
+        <li class="header">
+            <a title="回到首頁" href="index.html">回到首頁</a>
+        </li>
+    </ul>
+    <div id="container">
+        <header>
+            <h1>2013 中央資工網頁設計比賽</h1>
+        </header>
+        <section id="section-fork-contents">
+            <h3 id="section-fork">Fork簡易教學</h3>
+            <p>使用GitHub提供的Fork模式，可以簡單地將一個倉庫複製一份，並且修改，等待修改完成後，再發起<a title="Pull request教學" href="pullrequest.html">Pull request</a>讓原始的倉庫將變更合併。這樣的方式讓開源軟體的開發變得更加容易，也讓許多貢獻更加輕鬆地被整合進軟體當中。</p>
+            <p>完成接下來部分所示的Fork之後，可以與一般倉庫一樣進行<code>add</code>、<code>commit</code>與<code>branch</code>等操作。等到開發完成之後，便可以發起<a title="Pull request教學" href="pullrequest.html">Pull request</a>。</p>
+            <p>同樣地，<a title="Fork A Repo" href="https://help.github.com/articles/fork-a-repo">GitHub官方也一份英文版的教學文件</a>。</p>
+            <h4 id="section-fork-step1">Fork倉庫</h4>
+            <p>到我們<a title="比賽用檔案倉庫" href="2013-NCU-CSIE-Website-Design-Competition">倉庫的GitHub頁面</a>上，點選<code>Fork</code>按鈕：<img alt="Click Fork" src="fork.png" />（圖片來在GitHub官方教學文件）</p>
+            <h4 id="section-fork-step2">下載倉庫</h4>
+            <p>成功Fork倉庫之後，這個倉庫會出現在自己的倉庫列表當中，並且會在頁面理標示Fork的來源。有了倉庫之後，現在可以將這個倉庫下載到自己的本地電腦中，以便進行設計與更新。執行下列指令：<code><pre>git clone https://github.com/&lt;username&gt;/2013-NCU-CSIE-Website-Design-Competition.git</pre></code></p>
+            <h4 id="section-fork-step3">設定遠端</h4>
+            <p>現在雖然我們已經下載了原始的倉庫，不過預設遠端是Fork過後的倉庫，我們需要用以下指令：<code><pre>git remote add upstream https://github.com/NCU-CSIE-SNMG/2013-NCU-CSIE-Website-Design-Competition.git</pre></code>將原本的倉庫加入自己的倉庫當中。</p>
+            <p>如果我們的倉庫有更動，可以使用：<code><pre>git fetch upstream</pre></code>將更新下載下來，但不會將你的設定與更新覆蓋掉。</p>
+        </section>
+        <footer>
+            主辦單位：<a title="國立中央大學資訊工程學系" href="http://www.csie.ncu.edu.tw">國立中央大學資訊工程學系</a>
+            <span></span>協辦單位：<a title="國立中央大學資訊工程學系網管小組" href="http://snmg.csie.ncu.edu.tw">國立中央大學資訊工程學系網管小組</a>
+        </footer>
+    </div>
+</body>

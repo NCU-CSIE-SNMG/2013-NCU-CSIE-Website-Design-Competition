@@ -102,8 +102,21 @@ ol {
     padding-left: 30px;
 }
 
+img {
+    border: 1px solid #CACACA;
+    display: block;
+}
+
 code {
     font-family: monospace;
+}
+
+pre {
+    background: #333333;
+    border: 1px solid #6C6C6C;
+    color: #FFFFFF;
+    padding: 3px 8px;
+    white-space: normal;
 }
 
 #fork {
