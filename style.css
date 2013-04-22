@@ -129,12 +129,12 @@ section {
     border: 1px solid #CECECE;
     border-radius: 15px;
     left: 50%;
-    margin-left: 330px; 
+    margin-left: -430px; 
     overflow: hidden;
     padding: 15px 0;
     position: absolute;
     position: fixed;
-    top: 30px;
+    top: 40px;
 }
 
 #contents a {
