@@ -115,6 +115,7 @@ footer span {
 }
 
 #contents,
+#section-announance-contents,
 #section-update-contents {
     display: none;
 }
