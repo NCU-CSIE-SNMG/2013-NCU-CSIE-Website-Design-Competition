@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>國立中央大學 資訊工程學系</title>
+    <meta name="description" content="國立中央大學 資訊工程學系" />
+    <meta name="author" content="SNMG<snmg@csie.ncu.edu.tw>, Huang Yu Kai<joy06082003@hotmail.com>" />
+
+    <!--[if lt IE 8]>
+        <meta http-equiv="refresh" content="0;url=http://abetterbrowser.org/" />
+    <![endif]-->
+
+    <link href="variables.css" rel="stylesheet" />
+    <link href="screen.css" rel="stylesheet" />
+    <link href="editor.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+
+<body>
+<div class="page">
+    <div id="wrapper-header">
+        <a href="index.html">
+            <div id="header">
+                <h1>NCU CSIE</h1>
+            </div>
+        </a>
+    </div>
+    
+    <div id="wrapper-sub-nav">
+        <div id="sub-nav">
+            <ul id="subnavigation">
+                <li><a title="學生專區" href="students.html">學生專區</a></li>
+                <li><a title="家長專區" href="parents.html">家長專區</a></li>
+                <li><a title="系友會" href="#">系友會</a></li>
+                <li><a title="系學會" href="#">系學會</a></li>
+                <li><a title="軟工所" href="#">軟工所</a></li></ul>
+        </div>
+    </div>
+
+    <div id="wrapper-sliderShow">
+        <div id="sliderShow">
+            <ul class="rslides">
+                <li><img src="images/1.jpg" alt=""></li>
+                <li><img src="images/2.jpg" alt=""></li>
+                <li><img src="images/3.jpg" alt=""></li>
+            </ul>
+        </div>
+        <p id="clear"></p>
+    </div>
+
+    <div id="wrapper-main-nav">
+        <div id="main-nav">
+            <ul id="navigation">
+                <li><a title="首頁" href="index.html">首頁</a></li>
+                <li><a title="系所介紹" href="#">系所介紹</a>
+                    <ul>
+                        <li><a title="系所簡介" href="#">系所簡介</a></li>
+                        <li><a title="成員簡介" href="#">成員簡介</a></li>
+                        <li><a title="研究領域" href="#">研究領域</a></li>
+                    </ul>
+                </li>
+                <li><a title="招生資訊" href="admission.html">招生資訊</a>
+                    <ul>
+                        <li><a title="大學部" href="#">大學部</a></li>
+                        <li><a title="碩士班" href="#">碩士班</a></li>
+                        <li><a title="博士班" href="#">博士班</a></li>
+                        <li><a title="重考生" href="#">重考生</a></li>
+                        <li><a title="轉學生" href="#">轉學生</a></li>
+                        <li><a title="外籍生" href="#">外籍生</a></li>
+                        <li><a title="在職班" href="#">在職班</a></li>
+                    </ul>
+                </li>
+                <li><a title="課程內容" href="course.html">課程內容</a>
+                    <ul>
+                        <li><a title="大學部" href="#">大學部</a></li>
+                        <li><a title="碩士班" href="#">碩士班</a></li>
+                        <li><a title="博士班" href="#">博士班</a></li>
+                    </ul>
+                </li>
+                <li><a title="檔案下載" href="downloads.html">檔案下載</a></li>
+            </ul>
+        </div>
+        <p id="clear"></p>
+    </div>
+
+    <!-- Main content begin -->
+    <div id="wrapper-main-content">
+        <div id="main-content">
+            <h1>Admission</h1>
+            <a title="大學部" href="#">大學部</a>
+            <a title="碩士班" href="#">碩士班</a>
+            <a title="博士班" href="#">博士班</a>
+            <a title="重考生" href="#">重考生</a>
+            <a title="轉學生" href="#">轉學生</a>
+            <a title="外籍生" href="#">外籍生</a>
+            <a title="在職班" href="#">在職班</a>
+        </div><!-- Main content end -->
+    </div> <!-- wrapper-main-content end -->
+
+    <div id="wrapper-footer">
+        <div id="footer">
+            <ul>
+                <li><a title="網站地圖" href="sitemap.html">網站地圖</a></li>
+                <li><a title="版權宣告" href="#">版權宣告</a></li>
+                <li><a title="聯絡我們" href="#">聯絡我們</a></li>
+            </ul>
+            <div id="wrapper-search-box">
+                <form>
+                    <input type="text" title="搜尋" placeholder="搜尋">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div><!-- page end -->
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="responsiveslides.js"></script>
+<script type="text/javascript" src="navbar.js"></script>
+
+<script>
+    $(function() {
+        // slideshow hook
+        $('.rslides').responsiveSlides();
+    });
+</script>
+
+</html>
